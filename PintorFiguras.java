@@ -20,7 +20,21 @@ public class PintorFiguras
      * (usa bucles for)
      */
     public  void dibujarFigura(int altura) {
-        
+        int espacios = altura - 1;
+        int ast = 1;
+        for (int i =0; i < altura; i++) {
+           for (int j=0; j<espacios; j++) {
+                System.out.print(' ');
+            }
+            
+            for (int j=0; j<ast;j++){
+                System.out.print("*");
+           }
+            System.out.println();
+            espacios--;
+            ast += 2;
+
+        }
     }
 
     /**
